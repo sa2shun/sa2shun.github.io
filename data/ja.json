@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "langAttr": "ja",
+    "pageTitle": "佐々木駿 — 研究履歴書",
+    "tagline": "慶應義塾大学SFC研究所 所員 / HPC & LLM 推論研究者",
+    "role": "Research CV",
+    "footerNote": "更新: 2025年10月"
+  },
+  "about": {
+    "title": "自己紹介",
+    "body": [
+      "慶應義塾大学SFC研究所で大規模言語モデルの効率的な推論基盤を研究しています。高速化のための動的量子化やモデル選択を専門とし、HPC向けのシステム最適化と応用研究を横断しています。",
+      "国内外の学会で成果を発表しつつ、産学連携プロジェクトやR&Dインターンで培った実装力をバックエンド/推論基盤の改善に活かしています。"
+    ]
+  },
+  "interests": {
+    "title": "研究関心",
+    "items": [
+      "大規模言語モデルの効率的推論と適応的モデル選択",
+      "動的量子化・混合精度計算",
+      "高性能計算 (HPC) アーキテクチャ最適化",
+      "情報検索および応用NLPシステム"
+    ]
+  },
+  "education": {
+    "title": "学歴",
+    "items": [
+      {
+        "title": "慶應義塾大学 環境情報学部 環境情報学科",
+        "role": "学士 (環境情報学) ／ 専攻: コンピュータサイエンス・AI",
+        "period": "2020年4月 – 2025年9月",
+        "details": [
+          "研究室: 村井研究室 (2020-2021) → 金沢研究室 (2022-2023) → 川島研究室 (2024-2025)",
+          "卒業論文: 『大規模言語モデルにおける適応的モデル選択による効率的推論システムの研究』 (優秀卒業プロジェクト受賞)"
+        ]
+      },
+      {
+        "title": "東京工業大学附属科学技術高等学校 情報システム分野",
+        "role": "情報システム分野",
+        "period": "2017年4月 – 2020年3月",
+        "details": [
+          "プログラミングと言語処理を中心とした課題研究に従事"
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": "実務・インターン経験",
+    "items": [
+      {
+        "title": "株式会社 NABLAS",
+        "role": "R&D エンジニア (インターン)",
+        "period": "2020年9月 – 2021年3月",
+        "details": [
+          "PyTorch を用いた深層学習ライブラリの機能実装と検証"
+        ]
+      },
+      {
+        "title": "DMG森精機",
+        "role": "産業用ロボット開発インターン",
+        "period": "2022年9月 – 2024年4月",
+        "details": [
+          "ROS を活用したロボット制御とセンシングパイプラインの構築"
+        ]
+      },
+      {
+        "title": "博報堂",
+        "role": "スポーツ解析インターン",
+        "period": "2023年2月 – 2023年7月",
+        "details": [
+          "Python と OSS を活用したスポーツデータ分析ワークフローの整備"
+        ]
+      }
+    ]
+  },
+  "publications": {
+    "title": "発表・業績",
+    "years": [
+      {
+        "year": "2025",
+        "items": [
+          {
+            "title": "Fast Inference by Dynamically Selecting a Quantization Level",
+            "authors": "Shun Sasaki, Hideyuki Kawashima",
+            "venue": "HPC Asia 2025",
+            "links": [
+              { "label": "Paper", "url": "https://drive.google.com/file/d/1WLO7GerzezItdlSDvwE2LZlCsSDcL4rb/view?usp=sharing" },
+              { "label": "Poster", "url": "https://drive.google.com/file/d/17a6TtLCRkYjQD2TNosbv9kYcDCkB77SY/view?usp=sharing" }
+            ]
+          },
+          {
+            "title": "動的量子化レベル選択による高速推論",
+            "authors": "佐々木駿, 川島秀之",
+            "venue": "DEIM 2025",
+            "links": [
+              { "label": "Slide", "url": "https://drive.google.com/file/d/1JuKqJhAHDXgiipNXa37ezMb1Fo2Nk0dy/view?usp=sharing" }
+            ]
+          },
+          {
+            "title": "RAGを活用した大学シラバス検索システム開発",
+            "authors": "佐々木駿, 亀ヶ森駿太, 土佐純史, 川島英之",
+            "venue": "SWoPP 2025",
+            "links": [
+              { "label": "Poster", "url": "https://drive.google.com/file/d/1otUBz5fmEUJA2qoJrv5SFRi9d-aZaHqG/view?usp=sharing" }
+            ]
+          },
+          {
+            "title": "大規模言語モデルにおける適応的モデル選択による効率的推論システムの研究",
+            "authors": "佐々木駿",
+            "venue": "学部卒業論文 (2025年9月)",
+            "links": [
+              { "label": "PDF", "url": "https://drive.google.com/file/d/1VBWWVNAeLwlDyMyucV50MhKuUFdj9_4b/view?usp=sharing" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "body": [
+      "共同研究や発表に関するお問い合わせは下記よりご連絡ください。",
+      "Google Scholar / GitHub / ORCID の各プロフィールも随時更新しています。"
+    ],
+    "email": {
+      "label": "shun.sasaki@keio.jp へメール",
+      "user": "shun.sasaki",
+      "domain": "keio.jp"
+    },
+    "profiles": [
+      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=search_authors&mauthors=Shun+Sasaki" },
+      { "label": "GitHub", "url": "https://github.com/sa2shun" },
+      { "label": "ORCID", "url": "https://orcid.org/search/orcid-biography?q=Shun%20Sasaki" }
+    ]
+  }
+}

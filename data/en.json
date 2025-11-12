@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "langAttr": "en",
+    "pageTitle": "Shun Sasaki — Curriculum Vitae",
+    "tagline": "Research Associate, Keio University SFC / Efficient LLM Inference",
+    "role": "Research CV",
+    "footerNote": "Updated: Oct 2025"
+  },
+  "about": {
+    "title": "About Me",
+    "body": [
+      "I investigate adaptive inference systems for large language models at the Keio University SFC Research Institute, focusing on dynamic quantization and runtime model selection for HPC environments.",
+      "My work bridges academic research with production-grade implementations through collaborations and industry internships, delivering measurable acceleration for real-world NLP and retrieval systems."
+    ]
+  },
+  "interests": {
+    "title": "Interests",
+    "items": [
+      "Adaptive inference and routing for large language models",
+      "Dynamic quantization and mixed-precision compute",
+      "High-performance computing systems optimization",
+      "Information retrieval and applied NLP"
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "title": "Keio University, Faculty of Environment and Information Studies",
+        "role": "B.A. in Environmental Information Studies (Computer Science / AI)",
+        "period": "Apr 2020 – Sep 2025",
+        "details": [
+          "Labs: Murai Lab (2020-2021) → Kanazawa Lab (2022-2023) → Kawashima Lab (2024-2025)",
+          "Thesis: 'Efficient Inference Systems via Adaptive Model Selection for Large Language Models' (Outstanding Graduation Project)"
+        ]
+      },
+      {
+        "title": "Tokyo Tech High School of Science and Technology, Information Systems Track",
+        "role": "Information Systems major",
+        "period": "Apr 2017 – Mar 2020",
+        "details": [
+          "Conducted project-based research in programming and language processing"
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Work Experience",
+    "items": [
+      {
+        "title": "NABLAS Inc.",
+        "role": "R&D Engineer (Intern)",
+        "period": "Sep 2020 – Mar 2021",
+        "details": [
+          "Implemented and validated deep learning library features with PyTorch"
+        ]
+      },
+      {
+        "title": "DMG MORI",
+        "role": "Robotics Engineer Intern",
+        "period": "Sep 2022 – Apr 2024",
+        "details": [
+          "Built ROS-based industrial robot control and sensing pipelines"
+        ]
+      },
+      {
+        "title": "Hakuhodo Inc.",
+        "role": "Sports Analytics Intern",
+        "period": "Feb 2023 – Jul 2023",
+        "details": [
+          "Developed Python/OSS workflows for sports data analytics"
+        ]
+      }
+    ]
+  },
+  "publications": {
+    "title": "Publications",
+    "years": [
+      {
+        "year": "2025",
+        "items": [
+          {
+            "title": "Fast Inference by Dynamically Selecting a Quantization Level",
+            "authors": "Shun Sasaki, Hideyuki Kawashima",
+            "venue": "HPC Asia 2025",
+            "links": [
+              { "label": "Paper", "url": "https://drive.google.com/file/d/1WLO7GerzezItdlSDvwE2LZlCsSDcL4rb/view?usp=sharing" },
+              { "label": "Poster", "url": "https://drive.google.com/file/d/17a6TtLCRkYjQD2TNosbv9kYcDCkB77SY/view?usp=sharing" }
+            ]
+          },
+          {
+            "title": "Dynamic Quantization Level Selection for Fast Inference",
+            "authors": "Shun Sasaki, Hideyuki Kawashima",
+            "venue": "DEIM 2025",
+            "links": [
+              { "label": "Slide", "url": "https://drive.google.com/file/d/1JuKqJhAHDXgiipNXa37ezMb1Fo2Nk0dy/view?usp=sharing" }
+            ]
+          },
+          {
+            "title": "Developing a University Syllabus Retrieval System with RAG",
+            "authors": "Shun Sasaki, Shunta Kamegamori, Junji Tosa, Hideyuki Kawashima",
+            "venue": "SWoPP 2025",
+            "links": [
+              { "label": "Poster", "url": "https://drive.google.com/file/d/1otUBz5fmEUJA2qoJrv5SFRi9d-aZaHqG/view?usp=sharing" }
+            ]
+          },
+          {
+            "title": "Efficient Inference Systems via Adaptive Model Selection for Large Language Models",
+            "authors": "Shun Sasaki",
+            "venue": "Undergraduate Thesis, Sep 2025",
+            "links": [
+              { "label": "PDF", "url": "https://drive.google.com/file/d/1VBWWVNAeLwlDyMyucV50MhKuUFdj9_4b/view?usp=sharing" }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "body": [
+      "Feel free to reach out for collaborations, invited talks, or publication inquiries.",
+      "I keep my Scholar, GitHub, and ORCID profiles current with new outputs."
+    ],
+    "email": {
+      "label": "Email shun.sasaki@keio.jp",
+      "user": "shun.sasaki",
+      "domain": "keio.jp"
+    },
+    "profiles": [
+      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=search_authors&mauthors=Shun+Sasaki" },
+      { "label": "GitHub", "url": "https://github.com/sa2shun" },
+      { "label": "ORCID", "url": "https://orcid.org/search/orcid-biography?q=Shun%20Sasaki" }
+    ]
+  }
+}
