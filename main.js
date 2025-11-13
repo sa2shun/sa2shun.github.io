@@ -171,32 +171,20 @@
         const li = document.createElement('li');
         li.className = 'upcoming-item';
 
-        if (item.period || item.location) {
-          const period = document.createElement('div');
-          period.className = 'upcoming-period';
-          period.textContent = item.period || '';
-          if (item.location) {
-            const location = document.createElement('span');
-            location.className = 'upcoming-location';
-            location.textContent = item.location;
-            period.appendChild(location);
-          }
-          li.appendChild(period);
+        const primary = [item.period, item.name].filter(Boolean).join(' / ');
+        if (primary) {
+          const line = document.createElement('div');
+          line.className = 'upcoming-line';
+          line.textContent = primary;
+          li.appendChild(line);
         }
 
-        if (item.name || item.role) {
-          const title = document.createElement('div');
-          title.className = 'upcoming-title';
-          const name = document.createElement('span');
-          name.textContent = item.name || '';
-          title.appendChild(name);
-          if (item.role) {
-            const badge = document.createElement('span');
-            badge.className = 'badge';
-            badge.textContent = item.role;
-            title.appendChild(badge);
-          }
-          li.appendChild(title);
+        const secondary = [item.role, item.location].filter(Boolean).join(' · ');
+        if (secondary) {
+          const meta = document.createElement('div');
+          meta.className = 'upcoming-meta';
+          meta.textContent = secondary;
+          li.appendChild(meta);
         }
 
         list.appendChild(li);
