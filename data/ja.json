@@ -7,7 +7,7 @@
     "footerNote": "更新: 2025年10月"
   },
   "upcoming": {
-    "title": "Upcoming Events",
+    "title": "Upcoming Event",
     "items": [
       {
         "period": "2025年12月1日–2日",
@@ -50,20 +50,20 @@
     "title": "学歴",
     "items": [
       {
+        "title": "東京工業大学附属科学技術高等学校 情報システム分野",
+        "role": "情報システム分野",
+        "period": "2017年4月 – 2020年3月",
+        "details": [
+          "課題研究ではリーダーとしてブロックチェーンを用いた電子医療共有システムを開発"
+        ]
+      },
+      {
         "title": "慶應義塾大学 環境情報学部 環境情報学科",
         "role": "学士 (環境情報学) ／ 専攻: コンピュータサイエンス・AI",
         "period": "2020年4月 – 2025年9月",
         "details": [
           "研究室: 村井研究室 (2020-2021) → 金沢研究室 (2022-2023) → 川島研究室 (2024-2025)",
           "卒業論文: 『大規模言語モデルにおける適応的モデル選択による効率的推論システムの研究』 (優秀卒業プロジェクト受賞)"
-        ]
-      },
-      {
-        "title": "東京工業大学附属科学技術高等学校 情報システム分野",
-        "role": "情報システム分野",
-        "period": "2017年4月 – 2020年3月",
-        "details": [
-          "課題研究では、リーダーとしてブロックチェーンを用いた電子医療共有システムを開発 (資料: https://drive.google.com/file/d/1fl4xD7pjit1kS7iAMZz5JlK3i_8PyNfw/view?usp=drive_link)"
         ]
       }
     ]
@@ -166,7 +166,7 @@
     "title": "お問い合わせ",
     "body": [
       "共同研究や発表に関するお問い合わせは下記よりご連絡ください。",
-      "Google Scholar / GitHub / ORCID の各プロフィールも随時更新しています。"
+      "最新の取り組みやコードは GitHub にまとめています。"
     ],
     "email": {
       "label": "shun.sasaki@keio.jp へメール",
@@ -174,9 +174,7 @@
       "domain": "keio.jp"
     },
     "profiles": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=search_authors&mauthors=Shun+Sasaki" },
-      { "label": "GitHub", "url": "https://github.com/sa2shun" },
-      { "label": "ORCID", "url": "https://orcid.org/search/orcid-biography?q=Shun%20Sasaki" }
+      { "label": "GitHub", "url": "https://github.com/sa2shun" }
     ]
   }
 }

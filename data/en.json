@@ -7,7 +7,7 @@
     "footerNote": "Updated: Oct 2025"
   },
   "upcoming": {
-    "title": "Upcoming Events",
+    "title": "Upcoming Event",
     "items": [
       {
         "period": "Dec 1–2, 2025",
@@ -50,20 +50,20 @@
     "title": "Education",
     "items": [
       {
+        "title": "Tokyo Tech High School of Science and Technology, Information Systems Track",
+        "role": "Information Systems major",
+        "period": "Apr 2017 – Mar 2020",
+        "details": [
+          "Led a capstone team that built a blockchain-based electronic medical record sharing system"
+        ]
+      },
+      {
         "title": "Keio University, Faculty of Environment and Information Studies",
         "role": "B.A. in Environmental Information Studies (Computer Science / AI)",
         "period": "Apr 2020 – Sep 2025",
         "details": [
           "Labs: Murai Lab (2020-2021) → Kanazawa Lab (2022-2023) → Kawashima Lab (2024-2025)",
           "Thesis: 'Efficient Inference Systems via Adaptive Model Selection for Large Language Models' (Outstanding Graduation Project)"
-        ]
-      },
-      {
-        "title": "Tokyo Tech High School of Science and Technology, Information Systems Track",
-        "role": "Information Systems major",
-        "period": "Apr 2017 – Mar 2020",
-        "details": [
-          "Led a capstone team that built a blockchain-based electronic medical record sharing system (https://drive.google.com/file/d/1fl4xD7pjit1kS7iAMZz5JlK3i_8PyNfw/view?usp=drive_link)"
         ]
       }
     ]
@@ -166,7 +166,7 @@
     "title": "Contact",
     "body": [
       "Feel free to reach out for collaborations, invited talks, or publication inquiries.",
-      "I keep my Scholar, GitHub, and ORCID profiles current with new outputs."
+      "Latest work and code land on GitHub."
     ],
     "email": {
       "label": "Email shun.sasaki@keio.jp",
@@ -174,9 +174,7 @@
       "domain": "keio.jp"
     },
     "profiles": [
-      { "label": "Scholar", "url": "https://scholar.google.com/citations?view_op=search_authors&mauthors=Shun+Sasaki" },
-      { "label": "GitHub", "url": "https://github.com/sa2shun" },
-      { "label": "ORCID", "url": "https://orcid.org/search/orcid-biography?q=Shun%20Sasaki" }
+      { "label": "GitHub", "url": "https://github.com/sa2shun" }
     ]
   }
 }
