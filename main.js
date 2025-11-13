@@ -151,7 +151,22 @@
           if (typeof item === 'string') {
             li.innerHTML = item;
           } else if (item && typeof item === 'object') {
-            if (item.html) {
+            if (Array.isArray(item.fragments)) {
+              item.fragments.forEach((fragment) => {
+                if (typeof fragment === 'string') {
+                  li.appendChild(document.createTextNode(fragment));
+                } else if (fragment?.type === 'link' && fragment.url) {
+                  const link = document.createElement('a');
+                  link.href = fragment.url;
+                  link.target = fragment.target || '_blank';
+                  link.rel = fragment.rel || 'noreferrer noopener';
+                  link.textContent = fragment.label || fragment.text || fragment.url;
+                  li.appendChild(link);
+                } else if (fragment?.text) {
+                  li.appendChild(document.createTextNode(fragment.text));
+                }
+              });
+            } else if (item.html) {
               li.innerHTML = item.html;
             } else if (item.text) {
               li.textContent = item.text;
