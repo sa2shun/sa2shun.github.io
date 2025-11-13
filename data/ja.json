@@ -40,10 +40,10 @@
   "interests": {
     "title": "研究関心",
     "items": [
-      "Hybrid Linear Attention",
+      "Hybrid Linear Attention (WIP: under 小田悠介 / https://www.predicate.jp @ LLM-jp / https://llm-jp.nii.ac.jp)",
       "KV Cache Scheduling",
       "Geometry of Embedding Space",
-      "Distributed Inference"
+      "Distributed Inference (WIP: under 川島英之)"
     ]
   },
   "education": {
