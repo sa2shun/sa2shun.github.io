@@ -2,24 +2,48 @@
   "meta": {
     "langAttr": "en",
     "pageTitle": "Shun Sasaki — Curriculum Vitae",
-    "tagline": "Research Associate, Keio University SFC / Efficient LLM Inference",
+    "tagline": "Research Associate, Keio SFC / LLM inference systems",
     "role": "Research CV",
     "footerNote": "Updated: Oct 2025"
+  },
+  "upcoming": {
+    "title": "Upcoming Events",
+    "items": [
+      {
+        "period": "Dec 1–2, 2025",
+        "name": "ComSys 2025",
+        "role": "Poster",
+        "location": "Nagoya"
+      },
+      {
+        "period": "Jan 22–27, 2026",
+        "name": "AAAI 2026",
+        "role": "Participant",
+        "location": "Singapore"
+      },
+      {
+        "period": "Mar 9–13, 2026",
+        "name": "NLP 2026",
+        "role": "TBD",
+        "location": "Utsunomiya"
+      }
+    ]
   },
   "about": {
     "title": "About Me",
     "body": [
-      "I investigate adaptive inference systems for large language models at the Keio University SFC Research Institute, focusing on dynamic quantization and runtime model selection for HPC environments.",
-      "My work bridges academic research with production-grade implementations through collaborations and industry internships, delivering measurable acceleration for real-world NLP and retrieval systems."
+      "At the Keio University SFC Research Institute I build efficient, high-performance inference stacks for large language models, spanning theoretical work through HPC-oriented systems design.",
+      "I unwind with soccer, music (guitar / piano / bass / drums), and time with cats.",
+      "Open to RA roles, internships, and collaborative research proposals."
     ]
   },
   "interests": {
     "title": "Interests",
     "items": [
-      "Adaptive inference and routing for large language models",
-      "Dynamic quantization and mixed-precision compute",
-      "High-performance computing systems optimization",
-      "Information retrieval and applied NLP"
+      "Hybrid linear attention",
+      "KV cache scheduling",
+      "Geometry of embedding spaces",
+      "Distributed inference pipelines"
     ]
   },
   "education": {
@@ -39,7 +63,7 @@
         "role": "Information Systems major",
         "period": "Apr 2017 – Mar 2020",
         "details": [
-          "Conducted project-based research in programming and language processing"
+          "Led a capstone team that built a blockchain-based electronic medical record sharing system (https://drive.google.com/file/d/1fl4xD7pjit1kS7iAMZz5JlK3i_8PyNfw/view?usp=drive_link)"
         ]
       }
     ]
@@ -52,7 +76,7 @@
         "role": "R&D Engineer (Intern)",
         "period": "Sep 2020 – Mar 2021",
         "details": [
-          "Implemented and validated deep learning library features with PyTorch"
+          "Implemented and validated PSPNet / ResNet features for in-house PyTorch-based libraries"
         ]
       },
       {
@@ -60,7 +84,7 @@
         "role": "Robotics Engineer Intern",
         "period": "Sep 2022 – Apr 2024",
         "details": [
-          "Built ROS-based industrial robot control and sensing pipelines"
+          "Built ROS Navigation Stack pipelines for industrial robot control and vision"
         ]
       },
       {
@@ -68,7 +92,7 @@
         "role": "Sports Analytics Intern",
         "period": "Feb 2023 – Jul 2023",
         "details": [
-          "Developed Python/OSS workflows for sports data analytics"
+          "Developed PyTorch + OSS (MMDetection / Detectron) workflows for sports data analytics"
         ]
       }
     ]
@@ -79,6 +103,15 @@
       {
         "year": "2025",
         "items": [
+          {
+            "title": "Entropy-Adaptive Self-Consistency Sampling on GSM8K",
+            "authors": "Shun Sasaki, Hideyuki Kawashima",
+            "venue": "ComSys 2025 (Poster, Nagoya)",
+            "links": [
+              { "label": "Paper", "url": "https://drive.google.com/file/d/1C4GOp3dpQc5fDHkJ5b_IUKFBE7nzGIyb/view?usp=drive_link" },
+              { "label": "Poster", "url": "https://drive.google.com/file/d/1W_V4GweRp0-RedkOjU0w2NNeMaAcEUvX/view?usp=drive_link" }
+            ]
+          },
           {
             "title": "Fast Inference by Dynamically Selecting a Quantization Level",
             "authors": "Shun Sasaki, Hideyuki Kawashima",
@@ -110,6 +143,19 @@
             "venue": "Undergraduate Thesis, Sep 2025",
             "links": [
               { "label": "PDF", "url": "https://drive.google.com/file/d/1VBWWVNAeLwlDyMyucV50MhKuUFdj9_4b/view?usp=sharing" }
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2020",
+        "items": [
+          {
+            "title": "Blockchain-Based Electronic Medical Record Sharing System",
+            "authors": "Shun Sasaki (Capstone Lead)",
+            "venue": "Tokyo Tech High School Capstone Research",
+            "links": [
+              { "label": "Project", "url": "https://drive.google.com/file/d/1fl4xD7pjit1kS7iAMZz5JlK3i_8PyNfw/view?usp=drive_link" }
             ]
           }
         ]

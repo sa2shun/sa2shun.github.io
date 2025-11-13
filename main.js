@@ -87,6 +87,7 @@
 
     render(data) {
       this.updateMeta(data.meta);
+      this.renderUpcoming(data.upcoming);
       this.renderAbout(data.about);
       this.renderListSection('interests', data.interests);
       this.renderEntries('education', data.education);
@@ -151,6 +152,55 @@
           list.appendChild(li);
         });
       }
+      container.appendChild(list);
+    }
+
+    renderUpcoming(section = {}) {
+      this.updateSectionTitle('upcoming', section.title);
+      const container = this.getSectionBody('upcoming');
+      if (!container) return;
+      container.innerHTML = '';
+      const items = Array.isArray(section.items) ? section.items : [];
+      if (items.length === 0) {
+        container.textContent = '-';
+        return;
+      }
+      const list = document.createElement('ul');
+      list.className = 'upcoming-list';
+      items.forEach((item) => {
+        const li = document.createElement('li');
+        li.className = 'upcoming-item';
+
+        if (item.period || item.location) {
+          const period = document.createElement('div');
+          period.className = 'upcoming-period';
+          period.textContent = item.period || '';
+          if (item.location) {
+            const location = document.createElement('span');
+            location.className = 'upcoming-location';
+            location.textContent = item.location;
+            period.appendChild(location);
+          }
+          li.appendChild(period);
+        }
+
+        if (item.name || item.role) {
+          const title = document.createElement('div');
+          title.className = 'upcoming-title';
+          const name = document.createElement('span');
+          name.textContent = item.name || '';
+          title.appendChild(name);
+          if (item.role) {
+            const badge = document.createElement('span');
+            badge.className = 'badge';
+            badge.textContent = item.role;
+            title.appendChild(badge);
+          }
+          li.appendChild(title);
+        }
+
+        list.appendChild(li);
+      });
       container.appendChild(list);
     }
 

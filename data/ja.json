@@ -2,24 +2,48 @@
   "meta": {
     "langAttr": "ja",
     "pageTitle": "佐々木駿 — 研究履歴書",
-    "tagline": "慶應義塾大学SFC研究所 所員 / HPC & LLM 推論研究者",
+    "tagline": "慶應義塾大学SFC研究所 所員 / LLM推論基盤研究",
     "role": "Research CV",
     "footerNote": "更新: 2025年10月"
+  },
+  "upcoming": {
+    "title": "Upcoming Events",
+    "items": [
+      {
+        "period": "2025年12月1日–2日",
+        "name": "ComSys 2025",
+        "role": "Poster",
+        "location": "名古屋"
+      },
+      {
+        "period": "2026年1月22日–27日",
+        "name": "AAAI 2026",
+        "role": "Participant",
+        "location": "シンガポール"
+      },
+      {
+        "period": "2026年3月9日–13日",
+        "name": "NLP 2026",
+        "role": "未定",
+        "location": "宇都宮"
+      }
+    ]
   },
   "about": {
     "title": "自己紹介",
     "body": [
-      "慶應義塾大学SFC研究所で大規模言語モデルの効率的な推論基盤を研究しています。高速化のための動的量子化やモデル選択を専門とし、HPC向けのシステム最適化と応用研究を横断しています。",
-      "国内外の学会で成果を発表しつつ、産学連携プロジェクトやR&Dインターンで培った実装力をバックエンド/推論基盤の改善に活かしています。"
+      "慶應義塾大学SFC研究所で大規模言語モデル (LLM) の効率的で高性能な推論基盤を研究しています。LLM の理論から HPC 的な側面まで、アルゴリズムと実装の両輪でアプローチしています。",
+      "趣味はサッカーと音楽 (ギター / ピアノ / ベース / ドラム)、それから猫と過ごすことです。",
+      "RA、インターン、共同研究などのご相談を歓迎しています。"
     ]
   },
   "interests": {
     "title": "研究関心",
     "items": [
-      "大規模言語モデルの効率的推論と適応的モデル選択",
-      "動的量子化・混合精度計算",
-      "高性能計算 (HPC) アーキテクチャ最適化",
-      "情報検索および応用NLPシステム"
+      "Hybrid Linear Attention",
+      "KV Cache スケジューリング",
+      "埋め込み空間の幾何",
+      "Distributed Inference"
     ]
   },
   "education": {
@@ -39,7 +63,7 @@
         "role": "情報システム分野",
         "period": "2017年4月 – 2020年3月",
         "details": [
-          "プログラミングと言語処理を中心とした課題研究に従事"
+          "課題研究では、リーダーとしてブロックチェーンを用いた電子医療共有システムを開発 (資料: https://drive.google.com/file/d/1fl4xD7pjit1kS7iAMZz5JlK3i_8PyNfw/view?usp=drive_link)"
         ]
       }
     ]
@@ -52,7 +76,7 @@
         "role": "R&D エンジニア (インターン)",
         "period": "2020年9月 – 2021年3月",
         "details": [
-          "PyTorch を用いた深層学習ライブラリの機能実装と検証"
+          "PyTorch を用いた PSPNet / ResNet などの深層学習ライブラリ機能実装と検証"
         ]
       },
       {
@@ -60,7 +84,7 @@
         "role": "産業用ロボット開発インターン",
         "period": "2022年9月 – 2024年4月",
         "details": [
-          "ROS を活用したロボット制御とセンシングパイプラインの構築"
+          "ROS Navigation Stack を活用したロボット制御と、ロボットによる画像認識システム構築"
         ]
       },
       {
@@ -68,7 +92,7 @@
         "role": "スポーツ解析インターン",
         "period": "2023年2月 – 2023年7月",
         "details": [
-          "Python と OSS を活用したスポーツデータ分析ワークフローの整備"
+          "PyTorch と OSS (MMDetection / Detectron 等) を活用したスポーツデータ分析ワークフロー整備"
         ]
       }
     ]
@@ -79,6 +103,15 @@
       {
         "year": "2025",
         "items": [
+          {
+            "title": "GSM8K におけるエントロピー適応型 self-consistency サンプリングの分析",
+            "authors": "佐々木駿, 川島英之",
+            "venue": "ComSys 2025 (Poster, 名古屋)",
+            "links": [
+              { "label": "Paper", "url": "https://drive.google.com/file/d/1C4GOp3dpQc5fDHkJ5b_IUKFBE7nzGIyb/view?usp=drive_link" },
+              { "label": "Poster", "url": "https://drive.google.com/file/d/1W_V4GweRp0-RedkOjU0w2NNeMaAcEUvX/view?usp=drive_link" }
+            ]
+          },
           {
             "title": "Fast Inference by Dynamically Selecting a Quantization Level",
             "authors": "Shun Sasaki, Hideyuki Kawashima",
@@ -110,6 +143,19 @@
             "venue": "学部卒業論文 (2025年9月)",
             "links": [
               { "label": "PDF", "url": "https://drive.google.com/file/d/1VBWWVNAeLwlDyMyucV50MhKuUFdj9_4b/view?usp=sharing" }
+            ]
+          }
+        ]
+      },
+      {
+        "year": "2020",
+        "items": [
+          {
+            "title": "ブロックチェーンを用いた電子医療共有システム",
+            "authors": "佐々木駿 (課題研究リーダー)",
+            "venue": "東京工業大学附属科学技術高等学校 課題研究",
+            "links": [
+              { "label": "Project", "url": "https://drive.google.com/file/d/1fl4xD7pjit1kS7iAMZz5JlK3i_8PyNfw/view?usp=drive_link" }
             ]
           }
         ]
