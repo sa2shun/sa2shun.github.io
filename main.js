@@ -148,7 +148,15 @@
       } else {
         items.forEach((item) => {
           const li = document.createElement('li');
-          li.textContent = item;
+          if (typeof item === 'string') {
+            li.textContent = item;
+          } else if (item && typeof item === 'object') {
+            if (item.html) {
+              li.innerHTML = item.html;
+            } else if (item.text) {
+              li.textContent = item.text;
+            }
+          }
           list.appendChild(li);
         });
       }
