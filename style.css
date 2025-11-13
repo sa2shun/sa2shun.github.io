@@ -118,18 +118,19 @@ body {
 
 .hero-portrait {
   margin: 0;
-  width: 160px;
+  width: min(200px, 28vw);
+  max-height: 320px;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  align-self: stretch;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+  align-self: flex-start;
   display: flex;
   aspect-ratio: 3 / 4;
 }
 
 .hero-portrait img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
@@ -362,9 +363,10 @@ main {
   }
 
   .hero-portrait {
-    width: 100%;
-    max-width: 320px;
+    width: min(60%, 240px);
+    max-height: none;
     align-self: center;
+    margin-top: 16px;
   }
 
   .section-body {

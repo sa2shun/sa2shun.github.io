@@ -41,8 +41,8 @@
     "title": "研究関心",
     "items": [
       "Hybrid Linear Attention",
-      "KV Cache スケジューリング",
-      "埋め込み空間の幾何",
+      "KV Cache Scheduling",
+      "Geometry of Embedding Space",
       "Distributed Inference"
     ]
   },
