@@ -40,14 +40,10 @@
   "interests": {
     "title": "Interests",
     "items": [
-      {
-        "html": "Hybrid linear attention (WIP: with <a href=\"https://www.predicate.jp\" target=\"_blank\" rel=\"noreferrer noopener\">Yusuke Oda</a> @ <a href=\"https://llm-jp.nii.ac.jp\" target=\"_blank\" rel=\"noreferrer noopener\">LLM-jp</a>)"
-      },
+      "Hybrid linear attention (WIP: with <a href=\"https://www.predicate.jp\" target=\"_blank\" rel=\"noreferrer noopener\">Yusuke Oda</a> @ <a href=\"https://llm-jp.nii.ac.jp\" target=\"_blank\" rel=\"noreferrer noopener\">LLM-jp</a>)",
       "KV cache scheduling",
       "Geometry of embedding spaces",
-      {
-        "html": "Distributed inference pipelines (WIP: with Hideyuki Kawashima)"
-      }
+      "Distributed inference pipelines (WIP: with Hideyuki Kawashima)"
     ]
   },
   "education": {

@@ -149,7 +149,7 @@
         items.forEach((item) => {
           const li = document.createElement('li');
           if (typeof item === 'string') {
-            li.textContent = item;
+            li.innerHTML = item;
           } else if (item && typeof item === 'object') {
             if (item.html) {
               li.innerHTML = item.html;
