@@ -184,5 +184,14 @@
     "profiles": [
       { "label": "GitHub", "url": "https://github.com/sa2shun" }
     ]
+  },
+  "qr": {
+    "openLabel": "QRコードを開く",
+    "modalTitle": "プロフィールQRコード",
+    "caption": "QRコードをスキャンしてプロフィールを保存",
+    "linkLabel": "画像を開く",
+    "closeLabel": "閉じる",
+    "alt": "佐々木駿のプロフィールQRコード",
+    "image": "./assets/QR.png"
   }
 }

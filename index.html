@@ -31,24 +31,14 @@
             EN
           </button>
         </div>
-        <div class="hero-media">
-          <figure class="hero-portrait">
-            <img
-              src="./assets/IMG_9164.jpg"
-              alt="佐々木駿の近影"
-              loading="lazy"
-            />
-            <figcaption class="sr-only">Shun Sasaki</figcaption>
-          </figure>
-          <figure class="hero-qr">
-            <img
-              src="./assets/QR.png"
-              alt="佐々木駿のプロフィールQRコード"
-              loading="lazy"
-            />
-            <figcaption>QRコードをスキャンしてプロフィールを保存</figcaption>
-          </figure>
-        </div>
+        <figure class="hero-portrait">
+          <img
+            src="./assets/IMG_9164.jpg"
+            alt="佐々木駿の近影"
+            loading="lazy"
+          />
+          <figcaption class="sr-only">Shun Sasaki</figcaption>
+        </figure>
       </header>
 
       <main id="content" tabindex="-1">
@@ -104,9 +94,55 @@
         </section>
       </main>
 
+      <div class="qr-launcher">
+        <button id="qr-open" class="qr-open" type="button">
+          <span id="qr-open-label">QRコードを開く</span>
+        </button>
+      </div>
+
       <footer class="site-footer">
         <small id="footer-note">© 佐々木駿</small>
       </footer>
+
+      <div class="qr-modal" id="qr-modal" hidden>
+        <div
+          class="qr-modal__dialog"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="qr-modal-title"
+        >
+          <button
+            type="button"
+            class="qr-modal__close"
+            id="qr-close"
+            aria-label="閉じる"
+          >
+            ×
+          </button>
+          <h3 class="qr-modal__title" id="qr-modal-title">
+            プロフィールQRコード
+          </h3>
+          <img
+            class="qr-modal__img"
+            id="qr-modal-img"
+            src="./assets/QR.png"
+            alt="佐々木駿のプロフィールQRコード"
+            loading="lazy"
+          />
+          <p class="qr-modal__caption" id="qr-modal-caption">
+            QRコードをスキャンしてプロフィールを保存
+          </p>
+          <a
+            class="qr-modal__link"
+            id="qr-modal-link"
+            href="./assets/QR.png"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            画像を開く
+          </a>
+        </div>
+      </div>
 
       <noscript>
         <p class="noscript-message">

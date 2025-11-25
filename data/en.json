@@ -184,5 +184,14 @@
     "profiles": [
       { "label": "GitHub", "url": "https://github.com/sa2shun" }
     ]
+  },
+  "qr": {
+    "openLabel": "Open QR code",
+    "modalTitle": "Profile QR code",
+    "caption": "Scan to save this profile",
+    "linkLabel": "Open image",
+    "closeLabel": "Close",
+    "alt": "Shun Sasaki profile QR code",
+    "image": "./assets/QR.png"
   }
 }

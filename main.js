@@ -8,6 +8,15 @@
     constructor() {
       this.langToggle = document.getElementById('lang-toggle');
       this.footerNote = document.getElementById('footer-note');
+      this.qrOpenButton = document.getElementById('qr-open');
+      this.qrOpenLabel = document.getElementById('qr-open-label');
+      this.qrModal = document.getElementById('qr-modal');
+      this.qrCloseButton = document.getElementById('qr-close');
+      this.qrTitle = document.getElementById('qr-modal-title');
+      this.qrCaption = document.getElementById('qr-modal-caption');
+      this.qrImage = document.getElementById('qr-modal-img');
+      this.qrLink = document.getElementById('qr-modal-link');
+      this.handleEscape = this.handleEscape.bind(this);
       this.state = {
         lang: this.getStoredLanguage()
       };
@@ -17,6 +26,7 @@
     }
 
     bindEvents() {
+      this.bindQrEvents();
       if (!this.langToggle) return;
       this.langToggle.addEventListener('click', () => {
         const nextLang = this.state.lang === 'ja' ? 'en' : 'ja';
@@ -94,6 +104,7 @@
       this.renderEntries('experience', data.experience);
       this.renderPublications(data.publications);
       this.renderContact(data.contact);
+      this.renderQR(data.qr);
     }
 
     updateMeta(meta = {}) {
@@ -386,6 +397,76 @@
 
     getSectionBody(sectionKey) {
       return document.querySelector(`[data-section="${sectionKey}"]`);
+    }
+
+    bindQrEvents() {
+      if (this.qrOpenButton) {
+        this.qrOpenButton.addEventListener('click', () => this.openQr());
+      }
+      if (this.qrCloseButton) {
+        this.qrCloseButton.addEventListener('click', () => this.closeQr());
+      }
+      if (this.qrModal) {
+        this.qrModal.addEventListener('click', (event) => {
+          if (event.target === this.qrModal) {
+            this.closeQr();
+          }
+        });
+      }
+    }
+
+    handleEscape(event) {
+      if (event.key === 'Escape') {
+        this.closeQr();
+      }
+    }
+
+    openQr() {
+      if (!this.qrModal || !this.qrModal.hidden) return;
+      this.qrModal.hidden = false;
+      document.body.classList.add('modal-open');
+      document.addEventListener('keydown', this.handleEscape);
+      if (this.qrCloseButton) {
+        this.qrCloseButton.focus();
+      }
+    }
+
+    closeQr() {
+      if (!this.qrModal || this.qrModal.hidden) return;
+      this.qrModal.hidden = true;
+      document.body.classList.remove('modal-open');
+      document.removeEventListener('keydown', this.handleEscape);
+      if (this.qrOpenButton) {
+        this.qrOpenButton.focus();
+      }
+    }
+
+    renderQR(section = {}) {
+      if (this.qrOpenLabel && section.openLabel) {
+        this.qrOpenLabel.textContent = section.openLabel;
+      }
+      if (this.qrTitle && section.modalTitle) {
+        this.qrTitle.textContent = section.modalTitle;
+      }
+      if (this.qrCaption && section.caption) {
+        this.qrCaption.textContent = section.caption;
+      }
+      if (this.qrCloseButton && section.closeLabel) {
+        this.qrCloseButton.setAttribute('aria-label', section.closeLabel);
+      }
+      const imageSrc = section.image || './assets/QR.png';
+      if (this.qrImage) {
+        this.qrImage.src = imageSrc;
+        if (section.alt) {
+          this.qrImage.alt = section.alt;
+        }
+      }
+      if (this.qrLink) {
+        this.qrLink.href = section.linkUrl || imageSrc;
+        if (section.linkLabel) {
+          this.qrLink.textContent = section.linkLabel;
+        }
+      }
     }
   }
 
