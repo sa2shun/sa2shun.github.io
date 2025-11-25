@@ -76,6 +76,15 @@ body {
   margin-top: 16px;
 }
 
+.hero-media {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  width: clamp(180px, 26vw, 240px);
+  flex-shrink: 0;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -118,12 +127,11 @@ body {
 
 .hero-portrait {
   margin: 0;
-  width: min(200px, 28vw);
+  width: 100%;
   max-height: 320px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
-  align-self: flex-start;
   display: flex;
   aspect-ratio: 3 / 4;
 }
@@ -133,6 +141,30 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.hero-qr {
+  margin: 0;
+  width: 100%;
+  padding: 12px;
+  border-radius: 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.hero-qr img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.hero-qr figcaption {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--muted);
 }
 
 main {
@@ -342,11 +374,19 @@ main {
     align-items: stretch;
   }
 
+  .hero-media {
+    width: min(80%, 320px);
+    margin: 0 auto;
+  }
+
   .hero-portrait {
-    width: min(60%, 240px);
+    width: min(70%, 260px);
     max-height: none;
-    align-self: center;
     margin-top: 16px;
+  }
+
+  .hero-qr {
+    width: min(360px, 90%);
   }
 
   .section-body {
